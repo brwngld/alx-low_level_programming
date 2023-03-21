@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * times_table - Multiplication table of 9, starting with 0
