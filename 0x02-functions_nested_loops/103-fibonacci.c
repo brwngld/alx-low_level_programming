@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	unsigned long bona1 = 0, bona2 = 1, banasum;
+	unsigned long bona1 = 0, bona2 = 1, bonasum;
 	float tot_sum;
 
 	while (1)
