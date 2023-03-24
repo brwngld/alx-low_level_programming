@@ -3,7 +3,7 @@
 /**
  * print_numbers - Function that prints numbers from 0 to 9
  * written by brwngld
- * Return: (0)
+ * Return: void
 */
 
 void print_numbers(void)
@@ -12,9 +12,8 @@ void print_numbers(void)
 
 	for (c = '0'; c <= '9'; c++)
 	{
-		_putchar('c' + 0);
+		_putchar(c);
 	}
 
 	_putchar ('\n');
-	return (0);
 }
