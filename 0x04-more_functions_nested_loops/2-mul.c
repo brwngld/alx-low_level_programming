@@ -1,4 +1,5 @@
 #inlcude "main.h"
+#include <stdio.h>
 
 /**
  * int mul - A function that multiplies two integers.
@@ -10,5 +11,8 @@
 
 int mul(int a, int b);
 {
+	_putchar('a' + 0);
+	_putchar('b' + 0);
+
 	return (a * b);
 }
