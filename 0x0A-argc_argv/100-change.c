@@ -10,7 +10,7 @@
  * Return: 0
 */
 
-init main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int total, count;
 	unsigned int a;
@@ -24,7 +24,7 @@ init main(int argc, char **argv)
 	}
 
 	total = strtol(argv[1], &b, 10);
-	coutn = 0;
+	count = 0;
 
 	if (!*b)
 	{
