@@ -3,8 +3,8 @@
 
 /**
  * struct list_s - singly linke list
- * @str: string - malloced string
- * @len: lenght of the string
+ * @str: string (malloc'ed string)
+ * @len: length of the string
  * @next: points to the next node
  *
  * Description: singly linked list node structure for
