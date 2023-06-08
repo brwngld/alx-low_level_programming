@@ -19,11 +19,11 @@ int check(int a, int b)
 		return (1);
 	}
 
-	return (check(a, b -1));
+	return (check(a, b - 1));
 }
 
 /**
- * is_prime_number: States if number is prime or not
+ * is_prime_number - States if number is prime or not
  * @n: Nubmer
  * Return: 1 if prime and 0 if not
 */
@@ -35,5 +35,5 @@ int is_prime_number(int n)
 		return (0);
 	}
 
-	return (!check(n, n-1));
+	return (!check(n, n - 1));
 }
