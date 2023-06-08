@@ -1,27 +1,39 @@
 #include "main.h"
 
 /**
- * is_prime_number - Checks if the input number is a prime number or not
- * @n: Number to checked.
- * Return: 1 if number is prime and 0 if not.
+ * check - Checks if number is a prime number or not
+ * @a: Number
+ * @b: Divisor
+ * Return: Check
+ */
+
+int check(int a, int b)
+{
+	if (b == 1)
+	{
+		return (0);
+	}
+
+	if (a % b == 0)
+	{
+		return (1);
+	}
+
+	return (check(a, b -1));
+}
+
+/**
+ * is_prime_number: States if number is prime or not
+ * @n: Nubmer
+ * Return: 1 if prime and 0 if not
 */
 
 int is_prime_number(int n)
 {
-	int a;
-
 	if (n <= 1)
 	{
 		return (0);
 	}
 
-	for (a = 2; a * a <= n; a++)
-	{
-		if (n % a == 0)
-		{
-			return (0);
-		}
-	}
-
-	return (1);
+	return (!check(n, n-1));
 }
