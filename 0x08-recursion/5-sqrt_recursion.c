@@ -23,7 +23,7 @@ int check(int a, int b)
  * Return: Natural square root or -1
  */
 
-int _sqrt_ recursion(int n)
+int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
