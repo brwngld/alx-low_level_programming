@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * listin_len - A function that returns all the elements in a
- * listint_t list
+ * listint_len - A function that returns all the elements in a
+ * listin0t_t list
  * @h: The head pointer
  *
  * Return: The number of element
@@ -17,6 +17,5 @@ size_t listint_len(const listint_t *h)
 		h = h->next;
 		count++;
 	}
-
 	return (count);
 }
