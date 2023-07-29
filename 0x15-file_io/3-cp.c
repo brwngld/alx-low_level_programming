@@ -93,7 +93,7 @@ void check100(int check, int fd)
 
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to, close_tom, close_from;
+	int fd_from, fd_to, close_to, close_from;
 	ssize_t lenr, lenw;
 	char buffer[1024];
 	mode_t file_perm;
@@ -114,9 +114,11 @@ int main(int argc, char *argv[])
 			lenw = -1;
 		check99(lenw, argv[2], fd_from, fd_to);
 	}
+
 	close_to = close(fd_to);
 	close_from = close(fd_from);
 	check100(close_to, fd_to);
 	check100(close_from, fd_from);
+
 	return (0);
 }
