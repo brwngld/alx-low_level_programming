@@ -32,7 +32,7 @@ void check98(ssize_t check, char *file, int fd_from, int fd_to)
 {
 	if (check == -1)
 	{
-		dprintf(STDERR_FILENO, "Erro: Can't read from file %s\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
 		if (fd_from != -1)
 			close(fd_from);
 		if (fd_to != -1)
@@ -93,7 +93,7 @@ void check100(int check, int fd)
 
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to, close_from, close_to;
+	int fd_from, fd_to, close_tom, close_from;
 	ssize_t lenr, lenw;
 	char buffer[1024];
 	mode_t file_perm;
